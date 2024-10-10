@@ -7,8 +7,13 @@
     left: 0;
     right: 0;
     z-index: 100;
-    height: 100px;
+    width: 100%;
     transition: all 0.3s ease-in-out;
+}
+
+.header-area .logo img {
+    max-width: 100%;
+    height: auto;
 }
 
 .header-area .main-nav {
@@ -70,7 +75,7 @@
     background-image: url(../images/banner-bg.png);
     height: 100vh;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
     background-size: cover;
     position: relative;
     display: flex;
@@ -80,11 +85,7 @@
 }
 
 .welcome-area .header-text {
-    width: 100%;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-55%);
 }
 
 .welcome-area .header-text .header-title {
@@ -250,6 +251,15 @@
 .section-three .section-image {
     text-align: center;
     margin-right: -40px;
+    width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .section-three .section-image {
+        text-align: center;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
 }
 
 /*-----------------------
